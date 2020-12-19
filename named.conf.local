@@ -1,0 +1,5 @@
+zone "testwebsite.com" {
+    type master;
+    file "/etc/bind/zones/db.testwebsite.com";  # 10.128.0.0/16 subnet
+    allow-transfer { any; };  # ns2 private IP address - secondary
+};

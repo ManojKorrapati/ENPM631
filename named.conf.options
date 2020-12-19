@@ -1,0 +1,11 @@
+options {
+        directory "/var/cache/bind";
+
+        recursion yes;                 # enables resursive queries
+        listen-on { any; };   # ns1 private IP address - listen on private network only
+        
+        forwarders {
+                8.8.8.8;
+                8.8.4.4;
+        };
+};
