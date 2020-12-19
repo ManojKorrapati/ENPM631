@@ -3,7 +3,7 @@ services:
   web:
     image: "manojkorrapati/webapp"
     ports:
-      - "8083:5000"
+      - "8000:5000"
   redis:
     image: "redis:alpine"
   dns:
